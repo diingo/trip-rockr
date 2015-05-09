@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Volunteer Events</title>
+
+    <!-- /art Theme -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Dashboard v.2</title>
+
+    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="theme/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="theme/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="theme/css/animate.css" rel="stylesheet">
+    <link href="theme/css/style.css" rel="stylesheet">
+
+    <!-- /End Theme -->
+
+</head>
+<body class="gray-bg">
+
+<div id="app">
+</div>
+
+<script src="vendor/mithril.js"></script>
+<script src="src/ext/functions.js"></script>
+
+<script src="src/components/trip/trip.js"></script>
+
+
+<!-- /Start Theme stuff -->
+
+<!-- /End Theme stuff -->
+
+
+
+<script>
+  m.mount(document.getElementById('app'), Trip)
+</script>
+
+</body>
+</html>
