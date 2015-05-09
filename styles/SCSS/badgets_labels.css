@@ -1,0 +1,67 @@
+/*
+Error: Undefined variable: "$light-gray".
+        on line 2 of ./SCSS/badgets_labels.scss
+
+1: .label {
+2:   background-color: $light-gray;
+3:   color: $label-badget-color;
+4:   font-family: "Open Sans";
+5:   font-size: 10px;
+6:   font-weight: 600;
+7:   padding: 3px 8px;
+
+Backtrace:
+./SCSS/badgets_labels.scss:2
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `load'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$light-gray\".\A         on line 2 of ./SCSS/badgets_labels.scss\A \A 1: .label {\A 2:   background-color: $light-gray;\A 3:   color: $label-badget-color;\A 4:   font-family: \"Open Sans\";\A 5:   font-size: 10px;\A 6:   font-weight: 600;\A 7:   padding: 3px 8px;"; }

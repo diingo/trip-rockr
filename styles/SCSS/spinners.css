@@ -1,0 +1,71 @@
+/*
+Error: Undefined variable: "$spin-color".
+        on line 11 of ./SCSS/spinners.scss
+
+6:  *\/
+7: 
+8: .sk-spinner-rotating-plane.sk-spinner {
+9:   width: 30px;
+10:   height: 30px;
+11:   background-color: $spin-color;
+12:   margin: $spin-margin;
+13:   -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+14:   animation: sk-rotatePlane 1.2s infinite ease-in-out;
+15: }
+16: 
+
+Backtrace:
+./SCSS/spinners.scss:11
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `load'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$spin-color\".\A         on line 11 of ./SCSS/spinners.scss\A \A 6:  */\A 7: \A 8: .sk-spinner-rotating-plane.sk-spinner {\A 9:   width: 30px;\A 10:   height: 30px;\A 11:   background-color: $spin-color;\A 12:   margin: $spin-margin;\A 13:   -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;\A 14:   animation: sk-rotatePlane 1.2s infinite ease-in-out;\A 15: }\A 16: "; }
