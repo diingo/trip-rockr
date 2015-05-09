@@ -1,0 +1,59 @@
+<html>
+<head>
+
+
+    <!-- /Start Theme -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip-Rockr | Sign in</title>
+
+    <link href="theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="theme/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="theme/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="theme/css/animate.css" rel="stylesheet">
+    <link href="theme/css/style.css" rel="stylesheet">
+    <link href="theme/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <!-- /End Theme -->
+
+</head>
+<body class="gray-bg">
+
+<!-- <h1>Welcome to Trip-Rockr</h1> -->
+
+<div id="register">
+
+</div>
+
+<script src="vendor/mithril.js"></script>
+<script src="src/ext/functions.js"></script>
+
+<script src="src/components/register/register.js"></script>
+
+
+<script>
+  m.mount(document.getElementById('register'), Register)
+</script>
+
+    <script src="theme/js/jquery-2.1.1.js"></script>
+    <script src="theme/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="theme/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+</html>
+
