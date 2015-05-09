@@ -6,6 +6,10 @@
 //   var add5 = add.papp(5)
 //   add5(7) //=> 11
 //
+
+Array.concat = function (a,b) { return a.concat(b) }
+
+
 Function.prototype.papp = function () {
   var slice = Array.prototype.slice
   var fn = this
