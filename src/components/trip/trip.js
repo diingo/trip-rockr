@@ -52,7 +52,7 @@ function chooseItinerary(ctrl) {
   return m(".text-center.float-e-margins.p-md", [
     ctrl.itineraries().map(function(itin) {
       console.log("itin, ", itin)
-      return m("a.btn.btn-xs.btn-primary[href='#'][id='lightVersion']", {
+      return m("a.btn.btn-lg.btn-primary[href='#'][id='lightVersion']", {
         onclick: ctrl.selectedItineraryId.papp(itin.id)
       }, itin.name)
     })
