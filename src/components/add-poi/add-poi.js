@@ -42,10 +42,12 @@ AddPOI.view = function (ctrl) {
 function POIList (ctrl) {
   return  m(".poi-list.col-lg-3", [
     m(".ibox-title", [
-      m("h5", "Points of Interests")
+      m("h5", [
+        m("a[href='trip.html']", "Plans")
+      ])
     ]),
     m(".ibox-content", [
-      m("p.m-b-lg", m.trust("\nUse the map to add <span class='font-bold text-info'>points of interests</span> to your trip plan.\n")),
+      m("p.m-b-lg", m.trust("\nUse the map to add <span class='font-bold text-info'>POIs</span> to your trip plan.\n")),
       m(".dd[id='nestable2']", [
         m("ol.dd-list", [
           ctrl.plans().map( planListView.papp(ctrl) )

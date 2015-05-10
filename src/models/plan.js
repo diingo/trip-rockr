@@ -24,7 +24,8 @@
       url: 'http://api.triprockr.com/poi/itinerary/' + planId,
       data: {
         name: venue.name,
-        geoLoc: venue.location.coordinate
+        geoLoc: venue.location.coordinate,
+        description: venue.snippet_text
       }
     })
   }
