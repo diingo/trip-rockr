@@ -3,115 +3,134 @@ AddPOI = {}
 AddPOI.model = function () {}
 AddPOI.controller = function () {
   var ctrl = this
-  // ctrl.itineraries = m.prop()
-  // ctrl.pois        = m.prop()
-  // //////
-  // // trip id is hard coded atm
-  // /////
-  // var edges = m.request({ url: 'http://api.triprockr.com/itinerary/trip/huuwwa', method: 'GET' })
-  // .then(function(response) {
-  //   ctrl.itineraries( response.results )
-  //   return getFullItins(response.results)
-  // }).then(function(fullItins) {
-  //   ctrl.pois( getPOIs(fullItins) )
-  // })
+  ctrl.selectedVenue = m.prop(null)
+  ctrl.venueData = m.request({
+    url: 'http://api.triprockr.com/Yelp',
+    method: 'GET',
+    data: {
+      searchTerm: 'restaurants',
+      location: 'austin,tx',
+      radius: 3500
+    }
+  })
 
-  // ctrl.selectedItineraryId = m.prop(null)
 }
-
 
 AddPOI.view = function (ctrl) {
-  return m('#wrapper', [
-    POIList(),
-    POISelect()
+  return m('#wrapper.row', [
+    POIList(ctrl),
+    POISelect(ctrl),
+    m('#map-canvas', { config: googleMap.papp(ctrl) })
   ])
 }
 
-function POISelect () {
-  return m('#page-wrapper.gray-bg', [
-  ])
-}
-m(".ibox.", [
-      m(".ibox-title", [
-        m("h5", "Nestable custom theme list")
-      ]),
-      m(".ibox-content", [
-        m("p.m-b-lg", "\n Each list you can customize by standard css styles. Each element is responsive so you can add to it any other element to improve functionality of list.\n                            "),
-        m(".dd[id='nestable2']", [
-          m("ol.dd-list", [
-            m("li.dd-item[data-id='1']", [
-              m(".dd-handle", [
-                m("span.label.label-info", [m("i.fa.fa-users")]),
-                " Cras ornare tristique.\n                                        "
-              ]),
-              m("ol.dd-list", [
-                m("li.dd-item[data-id='2']", [
-                  m(".dd-handle", [
-                    m("span.pull-right", " 12:00 pm "),
-                    m("span.label.label-info", [m("i.fa.fa-cog")]),
-                    " Vivamus vestibulum nulla nec ante.\n                                                "
+function POIList (ctrl) {
+    return  m(".poi-list.col-lg-3", [
+        m(".ibox-title", [
+          m("h5", "Points of Interests")
+        ]),
+        m(".ibox-content", [
+          m("p.m-b-lg", m.trust("\nUse the map to add <span class='font-bold text-info'>points of interests</span> to your itineraries.\n")),
+          m(".dd[id='nestable2']", [
+            m("ol.dd-list", [
+              m("li.dd-item[data-id='1']", [
+                m(".dd-handle", [
+                  m("span.label.label-info", [m("i.fa.fa-users")]),
+                  " Cras ornare tristique.\n                                        "
+                ]),
+                m("ol.dd-list", [
+                  m("li.dd-item[data-id='2']", [
+                    m(".dd-handle", [
+                      m("span.pull-right", " 12:00 pm "),
+                      m("span.label.label-info", [m("i.fa.fa-cog")]),
+                      " Vivamus vestibulum nulla nec ante.\n                                                "
+                    ])
                   ])
                 ])
-              ])
-            ]),
-            m("li.dd-item[data-id='5']", [
-              m(".dd-handle", [
-                m("span.label.label-warning", [m("i.fa.fa-users")]),
-                " Integer vitae libero.\n                                        "
               ]),
-              m("ol.dd-list", [
-                m("li.dd-item[data-id='6']", [
-                  m(".dd-handle", [
-                    m("span.pull-right", " 15:00 pm "),
-                    m("span.label.label-warning", [m("i.fa.fa-users")]),
-                    " Nam convallis pellentesque nisl.\n                                                "
-                  ])
+              m("li.dd-item[data-id='5']", [
+                m(".dd-handle", [
+                  m("span.label.label-warning", [m("i.fa.fa-users")]),
+                  " Integer vitae libero.\n                                        "
                 ]),
-                m("li.dd-item[data-id='7']", [
-                  m(".dd-handle", [
-                    m("span.pull-right", " 16:00 pm "),
-                    m("span.label.label-warning", [m("i.fa.fa-bomb")]),
-                    " Vivamus molestie gravida turpis\n                                                "
-                  ])
-                ]),
+                m("ol.dd-list", [
+                  m("li.dd-item[data-id='6']", [
+                    m(".dd-handle", [
+                      m("span.pull-right", " 15:00 pm "),
+                      m("span.label.label-warning", [m("i.fa.fa-users")]),
+                      " Nam convallis pellentesque nisl.\n                                                "
+                    ])
+                  ]),
+                  m("li.dd-item[data-id='7']", [
+                    m(".dd-handle", [
+                      m("span.pull-right", " 16:00 pm "),
+                      m("span.label.label-warning", [m("i.fa.fa-bomb")]),
+                      " Vivamus molestie gravida turpis\n                                                "
+                    ])
+                  ]),
+                ])
               ])
             ])
           ])
-        ]),
-        m(".m-t-md", [
-          m("h5", "Serialised Output")
-        ]),
-        m("textarea.form-control[id='nestable2-output']")
+        ])
       ])
-    ])
+}
 
-function POIList () {
-  return m("nav.navbar-default.navbar-static-side[role='navigation']", [
-    m(".sidebar-collapse", [
-      m("ul.nav[id='side-menu']", [
-        m("li.nav-header", [
-          m(".dropdown.profile-element", [
-            " ",
-            m("span", [
-              m("img.img-circle[alt='image'][src='img/profile_small.jpg']")
-            ]),
-            m("a.dropdown-toggle[data-toggle='dropdown'][href='#']", [
-              m("span.clear", [" ",m("span.block.m-t-xs", [
-                  " ",
-                  m("strong.font-bold", "David Williams")
-                ])," ",m("span.text-muted.text-xs.block", ["Art Director ",m("b.caret")])," "]),
-              " "
-            ]),
-            m("ul.dropdown-menu.animated.fadeInRight.m-t-xs", [
-              m("li", [m("a[href='profile.html']", "Profile")])
+
+function POISelect(ctrl) {
+  var venue = ctrl.selectedVenue()
+
+  return m(".map-overlay-select.col-lg-4", [
+    m(".ibox", [
+      m(".ibox-content", [
+        m("h3", "To-do"),
+        m("p.small", [m("i.fa.fa-hand-o-up")," Drag task between list"]),
+
+        m("ul.sortable-list.connectList.agile-list.ui-sortable", [
+          venue ? [
+            m("li.success-element", [
+              m('h5', venue.name),
+              venue.snippet_text,
+              m(".agile-detail", [
+                m("a.pull-right.btn.btn-primary[href='#']", {}, "Add"),
+                m("i.fa.fa-phone"),
+                venue.display_phone
+              ])
             ])
-          ])
-        ]),
-        m("li", [
-          m("a[href='css_animation.html']", [m("i.fa.fa-magic")," ",m("span.nav-label", "CSS Animations "),m("span.label.label-info.pull-right", "62")])
-        ]),
+          ] : null
+        ])
       ])
     ])
   ])
 }
+
+
+function googleMap (ctrl, elem, hasInitialized, context) {
+  if (hasInitialized) return
+
+  var mapOptions = {
+    center: { lat: 30.27658, lng: -97.73182},
+    zoom: 12,
+    panControl: false,
+    zoomControl: true,
+    scaleControl: true
+  };
+  var map = new google.maps.Map(elem, mapOptions)
+  context.markers = ctrl.venueData().businesses.map(makeMarker)
+
+  function makeMarker (venue) {
+    var coord = venue.location.coordinate
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(coord.latitude, coord.longitude),
+      map: map,
+      title: venue.name
+    })
+    google.maps.event.addListener(marker, 'click', function () {
+      ctrl.selectedVenue(venue)
+      m.redraw()
+    })
+    return marker
+  }
+}
+
 

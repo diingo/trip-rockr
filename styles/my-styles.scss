@@ -1,3 +1,19 @@
 
+#app {
+  height: 100%;
+}
 
 a + a { margin-left: 0.2rem; }
+
+.poi-list {
+  max-height: 100%;
+  overflow: scroll;
+}
+
+.map-overlay-select {
+  max-height: 100%;
+  overflow: scroll;
+  position: absolute; top: 0.3rem; left: 32rem;
+  width: 38rem;
+  z-index: 100;
+}

@@ -2,6 +2,16 @@
 <head>
   <title>Trip Rockr</title>
 
+    <!-- /Start Google Maps -->
+      <style type="text/css">
+        html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+      </style>
+      <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8J2TnMfcRbJC7XL22YgdfuP83ddPDRhU">
+      </script>
+
+    <!-- /End Google Maps -->
+
     <!-- /art Theme -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +37,7 @@
 </head>
 <body class="gray-bg">
 
-<div id="app">
-</div>
+<div id="app"></div>
 
 <script src="vendor/mithril.js"></script>
 <script src="src/ext/functions.js"></script>
@@ -40,23 +49,59 @@
 
 <!-- /Start Theme stuff -->
 
-    <!-- Mainly scripts -->
     <script src="theme/js/jquery-2.1.1.js"></script>
     <script src="theme/js/bootstrap.min.js"></script>
     <script src="theme/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="theme/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+    <!-- Nestable List -->
+    <script src="theme/js/plugins/nestable/jquery.nestable.js"></script>
+
     <!-- Custom and plugin javascript -->
     <script src="theme/js/inspinia.js"></script>
-    <script src="theme/js/plugins/pace/pace.min.js"></script>
+    <script src="theme/js/plugins/fullcalendar/moment.min.js"></script>
 
-    <!-- Steps -->
-    <script src="theme/js/plugins/staps/jquery.steps.min.js"></script>
 
-    <!-- Jquery Validate -->
-    <script src="theme/js/plugins/validate/jquery.validate.min.js"></script>
+    <script>
+         $(document).ready(function(){
 
+             var updateOutput = function (e) {
+                 var list = e.length ? e : $(e.target),
+                         output = list.data('output');
+                 // if (window.JSON) {
+                 //     output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+                 // } else {
+                 //     output.val('JSON browser support required for this demo.');
+                 // }
+             };
+             // activate Nestable for list 1
+             $('#nestable').nestable({
+                 group: 1
+             }).on('change', updateOutput);
+
+             // activate Nestable for list 2
+             $('#nestable2').nestable({
+                 group: 1
+             }).on('change', updateOutput);
+
+             // output initial serialised data
+             updateOutput($('#nestable').data('output', $('#nestable-output')));
+             updateOutput($('#nestable2').data('output', $('#nestable2-output')));
+
+             $('#nestable-menu').on('click', function (e) {
+                 var target = $(e.target),
+                         action = target.data('action');
+                 if (action === 'expand-all') {
+                     $('.dd').nestable('expandAll');
+                 }
+                 if (action === 'collapse-all') {
+                     $('.dd').nestable('collapseAll');
+                 }
+             });
+         });
+    </script>
 <!-- /End Theme stuff -->
+
 <script>
   m.mount(document.getElementById('app'), AddPOI)
 </script>
