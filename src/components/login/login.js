@@ -4,7 +4,8 @@ Login.view = function (ctrl) {
   return m('.middle-box .text-center .loginscreen .animated .fadeInDown', [
     m('div',[
         m('div',[
-          m('h1.logo-name',"TR+")
+          // m('h1.logo-name',"TR+")
+          m('img.tripRockrLogo', {src: 'http://i.imgur.com/qGtEqY2.png' })
         ]),
         m('h3',"Welcome to TripRockr"),
         m('p',"Login in. To see it in action."),
@@ -18,7 +19,7 @@ Login.view = function (ctrl) {
           m('button.btn.btn-primary.block.full-width.m-b','Login'),
           m('a.btn.btn-sm.btn-white.btn-block',{href:"register.html" },'Create an account')
         ]),
-        m('p.m-t',"Trip-Rockr © 2015 ")
+        m('p.m-t',"TripRockr.com © 2015 ")
     ])
   ])
 };

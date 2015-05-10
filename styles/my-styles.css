@@ -18,3 +18,60 @@ a + a {
   z-index: 100; }
 
 /*# sourceMappingURL=my-styles.css.map */
+
+#price .top-buffer {
+    margin-top: 30px;
+}
+
+#price .ibox-content {
+  border-style: none;
+}
+
+#price .middle-box h1 {
+    font-size: 50px;
+}
+
+#price .area-buffer {
+    margin-top: 60px;
+}
+
+#price .search-button {
+    margin-top: 15px;
+}
+
+#price .fetch-button {
+    margin-top: 140px;
+}
+
+#price .loginscreen.middle-box {
+    width: 600px;
+}
+
+#price .intro-lead-in {
+  margin-bottom: 25px;
+  margin-top: 50px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 40px;
+  color: white;
+}
+
+#price .intro-heading {
+  margin-bottom: 50px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #4d394b;
+}
+
+.tripRockrLogo {
+  border-radius: 8%;
+}
+
+#login .tripRockrLogo, #register .tripRockrLogo {
+  margin-bottom: 20px;
+}
