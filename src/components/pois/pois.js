@@ -6,12 +6,11 @@ POIs.model = function (attrs) {
 
 POIs.controller = function (options) {
   var ctrl = this
-  ctrl.pois = options.pois
 }
 
-POIs.view = function (ctrl) {
+POIs.view = function (ctrl, options) {
   return m('.pois', [
-    ctrl.pois().map(function (poi, idx) {
+    options.pois.map(function (poi, idx) {
       return m(".vertical-timeline-block", [
         m(".vertical-timeline-icon.navy-bg", [
           m("i.fa.fa-briefcase")

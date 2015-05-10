@@ -1,6 +1,6 @@
 /*
 Error: File to import not found or unreadable: bootstrap-sprockets.
-       Load path: /Users/Quick/code/Hackathon/TripRockr-test/TestSCSS
+       Load path: /Users/Quick/code/Hackathon/Angel-Hack/Trip-Rockr/styles
         on line 12 of ./SCSS/style.scss
 
 7: 
@@ -47,16 +47,17 @@ Backtrace:
 /Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
 /Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/Quick/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `load'
+/Users/Quick/.rbenv/versions/2.0.0-p598/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A        Load path: /Users/Quick/code/Hackathon/TripRockr-test/TestSCSS\A         on line 12 of ./SCSS/style.scss\A \A 7: \A 8: // Google Fonts\A 9: @import url(\"//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en\");\A 10: \A 11: // Bootstra\A 12: @import \"bootstrap-sprockets\";\A 13: @import \"bootstrap\";\A 14: \A 15: // Variables, Mixins\A 16: @import \"base/variables\";\A 17: @import \"base/mixins\";"; }
+  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A        Load path: /Users/Quick/code/Hackathon/Angel-Hack/Trip-Rockr/styles\A         on line 12 of ./SCSS/style.scss\A \A 7: \A 8: // Google Fonts\A 9: @import url(\"//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en\");\A 10: \A 11: // Bootstra\A 12: @import \"bootstrap-sprockets\";\A 13: @import \"bootstrap\";\A 14: \A 15: // Variables, Mixins\A 16: @import \"base/variables\";\A 17: @import \"base/mixins\";"; }
