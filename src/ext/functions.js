@@ -15,7 +15,7 @@ Function.prototype.papp = function () {
   var fn = this
   var args = slice.call(arguments)
   return function () {
-    fn.apply(this, args.concat(slice.call(arguments)))
+    return fn.apply(this, args.concat(slice.call(arguments)))
   }
 }
 
