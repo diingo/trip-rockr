@@ -1,5 +1,12 @@
 Trip = {}
 
+
+//////////////////////////////////////
+// TODO - Rename 'itinerary' to 'plan'
+//////////////////////////////////////
+
+
+
 Trip.model = function () {}
 Trip.controller = function () {
   var ctrl = this
