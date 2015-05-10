@@ -5,7 +5,9 @@ Login.view = function (ctrl) {
     m('div',[
         m('div',[
           // m('h1.logo-name',"TR+")
+          m('a',{href: 'price.html'}, [
           m('img.tripRockrLogo', {src: 'http://i.imgur.com/qGtEqY2.png' })
+          ])
         ]),
         m('h3',"Welcome to TripRockr"),
         m('p',"Login in. To see it in action."),

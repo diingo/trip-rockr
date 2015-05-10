@@ -49,7 +49,9 @@ return m(".container .area-buffer", [
       ])
     ]),
     m(".col-lg-2", [
-      m("a.btn.btn-w-m.btn-warning.search-button[type='button']", "Search me"),
+      m('a',{href:"add-pois.html"},[
+        m("a.btn.btn-w-m.btn-warning.search-button[type='button']", "Search me"),
+      ]),
       m("a.btn.btn-w-m.btn-warning.fetch-button[type='button']", "Go fetch")
     ]),
   ])

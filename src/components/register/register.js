@@ -3,7 +3,9 @@ Register = {};
 Register.view = function (ctrl) {
   return m('.middle-box .text-center .loginscreen .animated .fadeInDown',[
     m('div',[
-       m('img.tripRockrLogo', {src: 'http://i.imgur.com/qGtEqY2.png' })
+       m('a',{href: 'price.html'},[
+        m('img.tripRockrLogo', {src: 'http://i.imgur.com/qGtEqY2.png' })
+       ])
     ]),
     m('h3', 'Register to TripRockr'),
     m('p',"Create an account to see it in action"),
